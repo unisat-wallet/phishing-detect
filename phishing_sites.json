@@ -1,0 +1,33 @@
+{
+  "version": 2,
+  "tolerance": 1,
+  "fuzzylist": ["unisat.io", "mempool.space", "fractalbitcoin.io"],
+  "whitelist": ["unisat.io", "mempool.space", "fractalbitcoin.io"],
+  "blacklist": [
+    "unisat.be",
+    "unissat.io",
+    "unisast.io",
+    "unilsat.io",
+    "unisatwallets.io",
+    "unisat-wallets.io",
+    "unisat.fi",
+    "unisatnode.io",
+    "web3resp.com/synchronization.html",
+    "unisatswallet.io",
+    "node.unisatio.network",
+    "unisat-node.pages.dev",
+    "unisat-mainnet.pages.dev",
+    "unisat.live",
+    "unisat-io.vercel.app",
+    "unisatmint.io",
+    "unisatrpc.io",
+    "api.network-fixtool.org",
+    "unisatwallet.com",
+    "unisatweb.pages.dev",
+    "dashboardprotocol.com",
+    "defidapponline.com",
+    "ordinalpunks.pro",
+    "fractalbitcoin.net",
+    "brc20-home.com"
+  ]
+}

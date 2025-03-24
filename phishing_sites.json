@@ -2,7 +2,7 @@
   "version": 2,
   "tolerance": 1,
   "fuzzylist": ["unisat.io", "mempool.space", "fractalbitcoin.io"],
-  "whitelist": ["unisat.io", "mempool.space", "fractalbitcoin.io"],
+  "whitelist": ["unisat.io", "mempool.space", "fractalbitcoin.io","zeebiu.fi"],
   "blacklist": [
     "unisat.be",
     "unissat.io",
@@ -29,6 +29,7 @@
     "ordinalpunks.pro",
     "fractalbitcoin.net",
     "brc20-home.com",
+    "unisat.com",
     "https://docs.cherry-ai.com/advanced-basic/mcp-1"
   ]
 }

@@ -2,7 +2,7 @@
   "version": 2,
   "tolerance": 1,
   "fuzzylist": ["unisat.io", "mempool.space", "fractalbitcoin.io"],
-  "whitelist": ["unisat.io", "mempool.space", "fractalbitcoin.io"],
+  "whitelist": ["unisat.io", "mempool.space", "fractalbitcoin.io","monadscore.xyz"],
   "blacklist": [
     "unisat.be",
     "unissat.io",

@@ -1,0 +1,54 @@
+name: False-positive phishing warning
+description: Request a review after checking MetaMask's active phishing list.
+title: "[False Positive] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Check the upstream list first
+
+        UniSat uses MetaMask's phishing list as its primary upstream source. If the domain is still in MetaMask's [active list](https://raw.githubusercontent.com/MetaMask/eth-phishing-detect/main/src/config.json), submit an appeal through MetaMask's [official issue tracker](https://github.com/MetaMask/eth-phishing-detect/issues/new/choose) first.
+
+        After MetaMask removes an entry, allow up to 24 hours for the change to synchronize to the UniSat extension. Open this issue only if the warning remains after that period, or if you believe it is caused by a UniSat-specific entry.
+
+        Never include seed phrases, private keys, recovery phrases, passwords, or other secrets.
+  - type: input
+    id: hostname
+    attributes:
+      label: Exact hostname
+      description: Enter only the hostname, for example `app.example.com`.
+      placeholder: app.example.com
+    validations:
+      required: true
+  - type: dropdown
+    id: metamask-status
+    attributes:
+      label: MetaMask status
+      options:
+        - The hostname is still in MetaMask's active list; I have submitted an upstream appeal.
+        - MetaMask removed the hostname more than 24 hours ago, but the UniSat warning remains.
+        - The hostname is not in MetaMask's active list; I believe this is a UniSat-specific warning.
+    validations:
+      required: true
+  - type: input
+    id: metamask-appeal
+    attributes:
+      label: MetaMask appeal or removal link
+      description: Required if the hostname is or was in MetaMask's list.
+      placeholder: https://github.com/MetaMask/eth-phishing-detect/issues/12345
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Legitimacy and safety evidence
+      description: Provide ownership proof, source code, audit reports, and the site's wallet/signature behavior. Do not include secrets.
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I checked MetaMask's active list and followed the process above.
+          required: true
+        - label: I have not shared any seed phrase, private key, recovery phrase, password, or other secret.
+          required: true

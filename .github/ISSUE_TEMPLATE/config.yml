@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: MetaMask phishing-list removal request
+    url: https://github.com/MetaMask/eth-phishing-detect/issues/new/choose
+    about: Appeal an active MetaMask phishing-list entry before opening an issue here.
